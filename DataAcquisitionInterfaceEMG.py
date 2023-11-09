@@ -5,7 +5,6 @@ Human-Computer Interaction (HCI) interface
 from threading import Thread
 import customtkinter
 from tkinter import *
-from NaNfill import Nan
 import camera
 from serial.tools.list_ports import comports
 from EmgSignalProcess import SignalProcess
