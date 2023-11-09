@@ -5,7 +5,6 @@ by placing 1 marker at each opening and closing transition. It is saved to the s
 '''
 import cv2 
 from datetime import datetime
-from numpy import interp
 from cvzone.HandTrackingModule import HandDetector
 import csv
 import time
