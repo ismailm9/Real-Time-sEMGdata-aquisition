@@ -30,12 +30,6 @@ def sp():
     hand=actionName[action_var.get()]
     part=partic.get()    
     SignalProcess(part,hand)
-
-def pth():
-    gen=gender_var.get()
-    pers=partic.get()
-    PredictionToHand(gen,pers)
-    
     
 def getSignal():
     actionName=["_Fist-Open","_Tumb-Open","_Index-Open","_Middle-Open","_Ring-Open","_Pinky-Open"]
@@ -173,11 +167,6 @@ button_4 = customtkinter.CTkButton(master=frame_device, text="Normalization Full
                                    font=customtkinter.CTkFont(size=25, weight=None), border_spacing=5, fg_color="blue",
                                    text_color="salmon", hover_color=("green", "green"),border_width=1,command=NormF)
 button_4.pack(side='top',padx=20, pady=1)
-
-button_5 = customtkinter.CTkButton(master=frame_device, text="Prediction to Hand", corner_radius=10,
-                                   font=customtkinter.CTkFont(size=25, weight=None), border_spacing=5, fg_color="blue",
-                                   text_color="salmon", hover_color=("green", "green"),border_width=1,command=pth)
-button_5.pack(side='top',padx=20, pady=1)
 
 button_6 = customtkinter.CTkButton(master=frame_button, text="sEMG Signal Processing and Feature Extraction",  corner_radius=10,
                                    font=customtkinter.CTkFont(size=15, weight="bold"), border_spacing=5, fg_color="salmon",
