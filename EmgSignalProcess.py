@@ -80,21 +80,21 @@ def SignalProcess(part,hand):
         
         for i in range(frame, smoothed_data.size, step):
             
-                x = smoothed_data[i - frame:i]
+                d = smoothed_data[i - frame:i]
                             
                 difff = np.diff(smoothed_data)
                 
-                rms.append(np.sqrt(np.mean(np.square(x))))
+                rms.append(np.sqrt(np.mean(np.square(d))))
                 
-                var.append(np.var(x,ddof=0))
+                var.append(np.var(d,ddof=0))
                 
-                mav.append(np.sum(np.abs(x))/frame)
+                mav.append(np.sum(np.abs(d))/frame)
                 
-                iemg.append(np.sum(np.abs(x)))
+                iemg.append(np.sum(np.abs(d)))
                 
-                wa.append(np.sum(abs(np.diff(x))))
+                wa.append(np.sum(abs(np.diff(d))))
                 
-                frequency, power = spectrum(x, fs)
+                frequency, power = spectrum(d, fs)
                 
                 mnp.append(np.sum(power) / len(power))
                 
