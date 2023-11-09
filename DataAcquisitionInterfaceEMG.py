@@ -184,7 +184,7 @@ button_6 = customtkinter.CTkButton(master=frame_button, text="sEMG Signal Proces
                                    text_color="brown", hover_color=("green", "yellow"),command=sp)
 button_6.pack(side='top',padx=20, pady=1)
 
-label_1 = customtkinter.CTkLabel(master=frame_Header, text="Machine Learning Based Robotic Hand Control Using sEMG Signal and Camera Images", corner_radius=10, fg_color="brown", text_color=("red", "thistle3"), font=customtkinter.CTkFont(size=20, weight="bold"))
+label_1 = customtkinter.CTkLabel(master=frame_Header, text="Classification of hand-finger gestures with machine learning algorithm using sEMG sensor and camera image data", corner_radius=10, fg_color="brown", text_color=("red", "thistle3"), font=customtkinter.CTkFont(size=20, weight="bold"))
 label_1.pack(side='top',padx=20, pady=10)
 
 armw=customtkinter.CTkEntry(master=frame_input, corner_radius=10, placeholder_text="Forearm Length",
