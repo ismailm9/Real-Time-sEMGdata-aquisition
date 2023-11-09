@@ -38,7 +38,7 @@ def camcam(bmi,kolw,kolc,gndr,participant,dra,camPort):
             fingers1 = detector.fingersUp(hand1)
             totalFingers = fingers1.count(1)
             
-            dst = {'Tumb':tumh,'Index':index,'Middle': middle, 'Ring':ring, 'Pinky':pinky}                
+            dst = {'Tumb':tumb,'Index':index,'Middle': middle, 'Ring':ring, 'Pinky':pinky}                
             
             finger_identicate(fingers1=5,"Open", fingers1=0,"Fist", fingers1=4,[minfinger(dist)])
         
