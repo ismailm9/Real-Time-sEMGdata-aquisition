@@ -68,11 +68,7 @@ def SignalProcess(part,hand):
         mav = []
         iemg = []
         wa = []
-        kurt = []
-        skewness = []
-        entrop = []
-
-
+       
         # Marker_Points and Features extraction
         markerpoints=markermapping(frame,marker.size, step)
         
