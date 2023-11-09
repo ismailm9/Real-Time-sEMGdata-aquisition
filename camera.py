@@ -40,7 +40,7 @@ def camcam(bmi,kolw,kolc,gndr,participant,dra,camPort):
             
             dst = {'Tumb':tumh,'Index':index,'Middle': middle, 'Ring':ring, 'Pinky':pinky}                
             
-            finger_identicate(fingers1=5,"Open", fingers1=0,"Fist", fingers1=4,[minfinger(fingers1)])
+            finger_identicate(fingers1=5,"Open", fingers1=0,"Fist", fingers1=4,[minfinger(dist)])
         
         write_csv(marker, fingers1)
                            
