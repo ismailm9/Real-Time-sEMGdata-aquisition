@@ -74,7 +74,7 @@ def SignalProcess(part,hand):
 
 
         # Marker_Points and Features extraction
-        markerporints=markermapping(frame,marker.size, step)
+        markerpoints=markermapping(frame,marker.size, step)
         
         th = np.mean(smoothed_data) + 3 * np.std(smoothed_data)
         
